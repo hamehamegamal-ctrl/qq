@@ -1,0 +1,6 @@
+{
+  "name": "Nurture & Harmony",
+  "description": "Warm, tactile bilingual mobile childcare companion with real-time timeline feeds, live bus transit telemetry, dietary health logs, and developmental insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-arabic: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+    --color-primary: #00685f;
+    --color-primary-container: #008378;
+    --color-secondary: #855300;
+    --color-secondary-container: #fea619;
+    --color-tertiary: #6b38d4;
+    --color-surface: #faf8ff;
+    --color-surface-container: #eaedff;
+    --color-on-surface: #131b2e;
+  }
+
+  body {
+    font-family: var(--font-latin);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-arabic);
+    line-height: 1.6;
+  }
+
+  [dir="rtl"] input,
+  [dir="rtl"] textarea {
+    font-family: var(--font-arabic);
+  }
+}
+
+/* Custom smooth scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tactile shadows from design system */
+.shadow-tactile-sm {
+  box-shadow: 0 2px 8px -2px rgba(15, 23, 42, 0.04);
+}
+.shadow-tactile-md {
+  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.05);
+}
+.shadow-tactile-lg {
+  box-shadow: 0 10px 24px -4px rgba(0, 104, 95, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.03);
+}
+.shadow-tactile-dock {
+  box-shadow: 0 16px 36px -6px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(19, 27, 46, 0.04);
+}
+
